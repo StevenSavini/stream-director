@@ -18,7 +18,10 @@ gem 'jquery-rails'
 
 group :development, :test do
   gem 'capybara'
-  gem 'factory_girl'
+  gem 'database_cleaner'
+  gem 'dotenv-rails'
+  gem 'factory_girl_rails'
+  gem 'faker'
   gem 'launchy'
   gem 'pry-rails'
   gem 'rspec-rails'
