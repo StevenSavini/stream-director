@@ -15,6 +15,13 @@ ActiveRecord::Schema.define(version: 20170430022057) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "movies", force: :cascade do |t|
+    t.string "title",                                                                                                null: false
+    t.string "image_url",     default: "http://www.hardwickagriculture.org/blog/wp-content/uploads/placeholder.jpg", null: false
+    t.string "description",   default: "",                                                                           null: false
+    t.string "premiere_date", default: "",                                                                           null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -34,13 +41,6 @@ ActiveRecord::Schema.define(version: 20170430022057) do
     t.string   "avatar_url"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
-  end
-
-  create_table "movies", force: :cascade do |t|
-    t.string "title",                                                                                                null: false
-    t.string "image_url",     default: "http://www.hardwickagriculture.org/blog/wp-content/uploads/placeholder.jpg", null: false
-    t.string "description",   default: "",                                                                           null: false
-    t.string "premiere_date", default: "",                                                                           null: false
   end
 
 end

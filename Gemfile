@@ -16,6 +16,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 
+gem 'foundation-rails', "6.3.0.0"
+
 group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'

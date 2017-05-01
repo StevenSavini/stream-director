@@ -1,10 +1,12 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import SearchBar from './components/searchBar'
+
 
 $(function() {
   ReactDOM.render(
-    <h1>Boo yaa</h1>,
+    <SearchBar />,
     document.getElementById('app')
   );
 });
