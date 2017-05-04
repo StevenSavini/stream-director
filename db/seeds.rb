@@ -21,7 +21,7 @@ json_response["results"].each do |result|
   movie = Movie.find_by(title: result["title"])
   movie.description = json_movie_details["overview"]
   movie.premiere_date = json_movie_details["release_date"]
-  movie.source = json_movie_details["source"]
+  movie.source = json_movie_details["subscription_web_sources"]
   movie.display_name = json_movie_details["display_name"]
   movie.link = json_movie_details["link"]
   if movie.save!

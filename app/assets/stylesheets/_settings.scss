@@ -68,7 +68,7 @@ $medium-gray: #22252c;
 $dark-gray: #8a8a8a;
 $black: #000000;
 $white: #fefefe;
-$body-background: #0B0C10;
+$body-background: #F3F3F1;
 $body-font-color: $medium-gray;
 $body-font-family: "Old Standard TT", Helvetica;
 $body-antialiased: true;
@@ -619,7 +619,7 @@ $tooltip-radius: $global-radius;
 // 37. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
+$topbar-padding: .2rem;
 $topbar-background: #F3F3F1;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
