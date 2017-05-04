@@ -30,7 +30,6 @@ feature "user creates account" do
 
     click_button "Sign up"
 
-    expect(page).to have_content("Welcome! You have signed up successfully.")
     expect(current_path).to eq '/'
     expect(page).to_not have_content("Sign in")
     expect(page).to_not have_content("Create Account")

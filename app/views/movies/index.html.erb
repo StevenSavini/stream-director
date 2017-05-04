@@ -1,1 +1,15 @@
-<div id="app"></div>
+<div class="row index-row small-up-2 medium-up-3 large-up-4">
+  <hr />
+  <% @movies.each do |movie| %>
+  <div class="column column-block">
+    <div class"movie-card">
+      <div class="overlay-container">
+        <%= link_to image_tag(movie.image_url), movie_path(movie), id: "movie-link" %>
+      </div>
+    </div>
+  </div>
+  <% if @movies.blank? %>
+  <h4>There are no movies containing the term <%= params[:search] %>.</h4>
+  <% end %>
+  <% end %>
+</div>

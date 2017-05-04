@@ -1,0 +1,19 @@
+<div>
+  <hr />
+  <div class="center">
+    <h3>This movie available to stream on</h3>
+    <% if @movie.source.include?('netflix') %>
+    <%= link_to image_tag("netflix.png") %>
+    <% end %>
+  </div>
+  <div class="center">
+      <h2><%= @movie.title %></h2>
+  </div>
+  <div class="center">
+    <%= link_to image_tag(@movie.image_url), movie_path(@movie) %>
+  </div>
+  <div class="center-text">
+    <h4>Description</h4>
+    <p><%= @movie.description %></p>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+@import "settings";
+
+.menu-icon{
+  height: auto;
+  width: 10em;
+}
+
+.page {
+  margin: 0px;
+  padding: 0px;
+}
+#header {
+  background: url("background.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  margin: -20px;
+  min-height: 620px;
+}

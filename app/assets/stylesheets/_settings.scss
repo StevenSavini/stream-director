@@ -56,6 +56,10 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
+$custom-dark-gray: #1f2833;
+$dark-teal: #45a29e;
+$bright-teal: #66fcf1;
+$custom-light-gray: #c5c6c7;
 $coral: #e14658;
 $dark-blue: #265673;
 $light-blue: #85defc;
@@ -64,7 +68,7 @@ $medium-gray: #22252c;
 $dark-gray: #8a8a8a;
 $black: #000000;
 $white: #fefefe;
-$body-background: #c0b3a0;
+$body-background: #F3F3F1;
 $body-font-color: $medium-gray;
 $body-font-family: "Old Standard TT", Helvetica;
 $body-antialiased: true;
@@ -615,8 +619,8 @@ $tooltip-radius: $global-radius;
 // 37. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
-$topbar-background: $medium-gray;
+$topbar-padding: .2rem;
+$topbar-background: #F3F3F1;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
