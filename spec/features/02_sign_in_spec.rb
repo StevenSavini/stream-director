@@ -27,7 +27,6 @@ feature "user signs in" do
 
     click_button "Log in"
 
-    expect(page).to have_content("Signed in successfully.")
     expect(current_path).to eq '/'
     expect(page).to_not have_content("Sign in")
     expect(page).to_not have_content("Create Account")

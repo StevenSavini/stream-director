@@ -6,7 +6,7 @@ class AddColumnsToMovies < ActiveRecord::Migration[5.0]
   end
 
   def down
-    remove_column :movies, :source
+    remove_column :movies, :source, default: ""
     remove_column :movies, :display_name
     remove_column :movies, :link
   end

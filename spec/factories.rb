@@ -18,5 +18,6 @@ FactoryGirl.define do
     description "This is a long description that is supposed to talk about how
                  great this movie is and it's here mostly to take up space and
                  make our page look good."
+    source "netflix"
   end
 end
