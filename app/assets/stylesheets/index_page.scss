@@ -1,15 +1,15 @@
 @import "settings";
 
+body {
+    min-height: 100vh;
+}
 .menu-icon{
   height: auto;
   width: 10em;
 }
 
-.page {
-  margin: 0px;
-  padding: 0px;
-}
-#header {
+#background {
+  height: 100%;
   background: url("background.jpg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -17,7 +17,6 @@
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-  height: 100%;
-  margin: -20px;
-  min-height: 620px;
+  margin-top: -20px;
+  min-height: 93.2vh;
 }
