@@ -24,7 +24,7 @@
   width: 0;
   top: 0;
   right: 0;
-  background: white;
+  background: #ffffff;
   /* IE9 */
   background: linear-gradient(225deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
@@ -34,6 +34,6 @@
   transition-property: width, height;
 }
 .hvr-curl-top-right:hover:before, .hvr-curl-top-right:focus:before, .hvr-curl-top-right:active:before {
-  width: 25px;
   height: 25px;
+  width: 25px;
 }
