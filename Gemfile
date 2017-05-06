@@ -5,10 +5,17 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+
+gem 'carrierwave'
+gem 'fog'
+gem 'carrierwave-aws'
 gem 'coffee-rails', '~> 4.2'
 gem 'devise'
+gem 'fog-aws'
 gem 'httparty'
+gem 'mini_magick'
 gem 'pg', '~> 0.18'
+gem 'pg_search'
 gem 'puma', '~> 3.0'
 gem 'rails', '~> 5.0.2'
 gem 'sass-rails', '~> 5.0'

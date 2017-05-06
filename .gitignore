@@ -21,3 +21,8 @@
 /node_modules
 /app/assets/javascripts/bundle.js
 /react/coverage
+
+/public/uploads
+
+# Ignore application configuration
+/config/application.yml
