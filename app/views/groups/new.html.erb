@@ -1,0 +1,13 @@
+<div class="mainbox">
+  <%= form_for @group do |f|%>
+
+<div>
+  <%= f.label :title, "Title" %>
+  <%= f.text_field :title %>
+</div>
+
+<div>
+  <%= f.submit "Add Group"%>
+</div>
+  <% end %>
+</div>
