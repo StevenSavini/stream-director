@@ -11,22 +11,28 @@
     <p><%= @movie.description %></p>
   </div>
   <div class="center">
-    <h3>This movie available to stream on</h3>
-    <% if @movie.source.include?('netflix') %>
-      <%= link_to image_tag("netflix.png") %>
-    <% end %>
-    <% if @movie.source.include?('amazon') %>
-      <%= link_to image_tag("amazon") %>
-    <% end %>
-    <% if @movie.source.include?('apple') %>
-      <%= link_to image_tag("apple") %>
-    <% end %>
-    <% if @movie.source.include?('hbo') %>
-      <%= link_to image_tag("hbo") %>
-    <% end %>
-    <% if @movie.source.include?('hulu') %>
-      <%= link_to image_tag("hulu") %>
-    <% end %>
+      <% if @movie.source == "[]" %>
+        <h3>This movie is not available to stream</h3>
+      <% else %>
+        <h3>This movie available to stream on</h3>
+        <div class="tnail">
+        <% if @movie.source.include?('netflix') %>
+          <%= link_to image_tag("netflix.png") %>
+        <% end %>
+        <% if @movie.source.include?('amazon') %>
+          <%= link_to image_tag("amazon.png") %>
+        <% end %>
+        <% if @movie.source.include?('apple') %>
+          <%= link_to image_tag("apple.png") %>
+        <% end %>
+        <% if @movie.source.include?('hbo') %>
+          <%= link_to image_tag("hbo.png") %>
+        <% end %>
+        <% if @movie.source.include?('hulu') %>
+          <%= link_to image_tag("hulu.png") %>
+        <% end %>
+      <% end %>
+    </div>
   </div>
 
 </div>
