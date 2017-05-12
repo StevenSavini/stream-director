@@ -4,4 +4,13 @@ Rails.application.routes.draw do
   resources :users
   resources :movies, only: [:index, :show]
   resources :groups
+  resources :netflix
+  resources :amazon
+  resources :hulu
+  resources :hbo
+  get 'movies/index', to: 'movies#index'
+
+  post 'movies/index', to: 'movies#searchAPI'
+
+  post 'search', to: 'movies#searchAPI'
 end
