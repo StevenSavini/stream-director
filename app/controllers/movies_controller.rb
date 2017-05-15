@@ -27,7 +27,7 @@ class MoviesController < ApplicationController
         movie.display_name = json_movie_details["display_name"]
         movie.link = json_movie_details["link"]
       end
-      movie = Movie.find_by(title: result["title"])
-    end
   end
+  @searched = Movie.where("title ilike ?", "%#{userinput}%")
+end
 end

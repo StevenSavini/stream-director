@@ -1,8 +1,9 @@
 <hr />
+
 <div id="search">
-    <%= form_tag("/search", method: "post") do %>
+  <%= form_tag("/search", method: "post") do %>
     <%= text_field_tag(:userinput) %>
-    <%= submit_tag("Search") %>
+    <%= submit_tag("Search", class: 'position')%>
   <% end %>
 </div>
 <div class="row index-row small-up-2 medium-up-3 large-up-4">

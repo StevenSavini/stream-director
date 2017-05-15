@@ -6,6 +6,28 @@
   margin: 0px;
 }
 
+.searched {
+  margin-left: 35%;
+}
+
+#search {
+  width: 45%;
+  margin: 0 auto;
+  float: center;
+}
+
+.btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 1%;
+}
+
 a .pic {
   max-width: 75px;
   max-height: 75px;
@@ -14,6 +36,19 @@ a .pic {
 #size {
   width: 75px;
   height: 75px;
+}
+.position {
+  margin-top: -3%;
+  margin-left: 41.5%;
+  margin-bottom: 1%;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 a {
