@@ -5,11 +5,15 @@
 
 # Stream Director
 
-Stream Director is my capstone project for Launch Academy. The site allows users to view which movies are available on streaming platforms such as Netflix. Stream Director uses Rails, React, and a PostgreSQL database.
+Stream Director is my capstone project for Launch Academy. The site allows users to view which movies are available on streaming platforms such as Netflix. Stream Director uses Rails, React, and a PostgreSQL database. All of the movies are fetched from an external API called Guidebox.
 
 ## Getting Started
 
-
+git clone https://github.com/StevenSavini/stream-director.git
+bundle
+npm install
+rails s
+npm start
 
 ### Prerequisites
 
