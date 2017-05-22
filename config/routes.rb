@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   root to: "movies#home"
   resources :users
   resources :movies, only: [:index, :show]
-  resources :groups
   resources :netflix
   resources :amazon
   resources :hulu
